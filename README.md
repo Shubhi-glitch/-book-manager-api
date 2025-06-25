@@ -1,36 +1,33 @@
 # 📚 Book Manager API
 
-A full-stack Book Management web application built with **Node.js**, **Express**, **MongoDB**, and a beautiful animated **HTML/CSS/JavaScript** frontend.
-
-This app allows users to **create, read, update, and delete (CRUD)** books in a local MongoDB database using RESTful API endpoints.
+A simple RESTful API to manage books using Express and MongoDB.
 
 ---
 
-## 🚀 Features
+## 🔧 Tech Stack
 
-- 📖 Add new books with title, author, genre, and year
-- 📝 Edit or update existing books
-- 🗑️ Delete books from the list
-- 📃 View all books in a dynamic, responsive table
-- ✨ Beautiful animated frontend using HTML + CSS
-- 🔗 REST API built with Express.js and connected to MongoDB
-
----
-
-## 🧱 Tech Stack
-
-| Frontend              | Backend             | Database   |
-|-----------------------|---------------------|------------|
-| HTML5, CSS3, JavaScript | Node.js, Express.js | MongoDB    |
+- Node.js
+- Express.js
+- MongoDB (via mongoose)
+- Jest (for testing)
+- Supertest
+- MongoDB Memory Server
 
 ---
 
-## 📂 Project Structure
+## 📦 API Endpoints
 
-book-manager-api/
-├── models/
-│ └── Book.js # Mongoose schema
-├── index.js # Express API server
-├── index.html # Frontend UI
-├── style.css # Frontend CSS (animated)
-├── README.md
+| Method | Endpoint       | Description       |
+|--------|----------------|-------------------|
+| GET    | /api/books     | Get all books     |
+| POST   | /api/books     | Add a new book    |
+| PUT    | /api/books/:id | Update a book     |
+| DELETE | /api/books/:id | Delete a book     |
+
+---
+
+## 🧪 How to Run Tests
+
+```bash
+npm install
+npm test
